@@ -1,24 +1,8 @@
 body {
     margin-left: 20px;
   }
-
-  #noLayout {
-    float: none;
-  }
-
-  #verticalLayout {
-    flex-direction: column;
-  }
-
-  #horizontalLayout {
-    flex-direction: row;
-  }
-
-  #gridLayout {
-    grid-template-rows: auto;
-  }
   
-  .card {
+  #card {
     width: 500px;
     background-color: lightgrey;
     border: 1px solid darkgray;

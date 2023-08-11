@@ -18,9 +18,9 @@
     <button id="gridLayout" onclick="selectGridLayout()">Grid layout</button>
 
     <h1>Eksempel 1</h1>
-    <div class="card">
-      <div class="header green">Verktøy</div>
-      <div class="innercard">
+    <div id="card">
+      <div class="header green" onclick="showTools()">Verktøy</div>
+      <div class="innercard" id="tools">
         De to viktigste verktøyene vi skal bruke er disse:
         <ul>
           <li>
@@ -43,9 +43,9 @@
       </div>
     </div>
 
-    <div class="card">
-      <div class="header blue">HTML</div>
-      <div class="innercard">
+    <div id="card">
+      <div class="header blue" onclick="showHTML()">HTML</div>
+      <div class="innercard" id="html">
         Vi bruker HTML til å definere et dokument.
         <ul>
           <li>Tagger for grunnleggende oppsett av en HTML-fil</li>
@@ -67,9 +67,9 @@
       </div>
     </div>
 
-    <div class="card">
-      <div class="header red">CSS</div>
-      <div class="innercard">
+    <div id="card">
+      <div class="header red" onclick="showCSS()">CSS</div>
+      <div class="innercard" id="css">
         Vi bruker CSS til å <i>style</i> et dokument, altså farger, fonter,
         utseende og lignende.
         <ul>
@@ -108,9 +108,9 @@
       </div>
     </div>
 
-    <div class="card">
-      <div class="header yellow">JavaScript</div>
-      <div class="innercard">
+    <div id="card">
+      <div class="header yellow" onclick="showJavaScript()">JavaScript</div>
+      <div class="innercard" id="javaScript">
         Det viktigste vi skal lære er programmeringsspråket JavaScript. Vi skal
         lære grunnleggende programmering ved å manipulere HTML- og CSS-kode på
         en nettside ved hjelp av JavaScript.
@@ -128,12 +128,20 @@
       </div>
     </div>
 
-    <div class="card">
-      <div class="header dark">Hode, kropp og ben</div>
-      <div class="innercard">
-        <button>◀</button><img src="img/head1.png" /><button>▶</button> <br />
-        <button>◀</button><img src="img/body1.png" /><button>▶</button> <br />
-        <button>◀</button><img src="img/legs1.png" /><button>▶</button> <br />
+    <div id="card">
+      <div class="header dark" onclick="showGame()">Hode, kropp og ben</div>
+      <div class="innercard" id="game">
+        <div id="head">
+          <button onclick="playHead4()">◀</button
+          ><img src="img/head1.png" /><button onclick="playHead2()">▶</button>
+          <br />
+        </div>
+        <div id="body">
+          <button>◀</button><img src="img/body1.png" /><button>▶</button> <br />
+        </div>
+        <div id="legs">
+          <button>◀</button><img src="img/legs1.png" /><button>▶</button> <br />
+        </div>
       </div>
     </div>
     <script src="script.js"></script>
