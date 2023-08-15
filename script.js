@@ -1,24 +1,24 @@
 
+function selectNoLayout() {
+  document.getElementById('cards').classList = []
+  document.getElementById('cards').classList.remove('gridLayout')
+  document.getElementById('cards').classList.remove('horizontalLayout')
+  document.getElementById('cards').classList.remove('verticalLayout')
+};
 
-// selectNoLayout();
-// function selectNoLayout() {
-//     document.getElementById('card').style.cssFloat = "none"
-// };
-// selectVerticalLayout();
-// function selectVerticalLayout() {
-//     selectNoLayout();
-//     document.getElementById('card').style.gridTemplateColumns = "auto auto auto auto auto"
-// };
-// selectHorizontalLayout();
-// function selectHorizontalLayout() {
-//     selectNoLayout();
-//     document.getElementById('card').style.gridTemplateRows = "auto auto auto auto auto"
-// };
-// selectGridLayout();
-// function selectGridLayout() {
-//     selectNoLayout();
-//     document.getElementById('card').style.gridTemplateColumns = "auto auto auto"
-// };
+function selectGridLayout() {
+  document.getElementById('cards').classList = []
+  document.getElementById('cards').classList.add('gridLayout')
+}
+function selectVerticalLayout() {
+  document.getElementById('cards').classList = []
+  document.getElementById('cards').classList.add('verticalLayout')
+}
+function selectHorizontalLayout() {
+  document.getElementById('cards').classList = []
+  document.getElementById('cards').classList.add('horizontalLayout')
+}
+
 
 
 let tools = document.getElementById("tools").innerHTML = `De to viktigste verktøyene vi skal bruke er disse:

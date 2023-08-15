@@ -1,16 +1,18 @@
-sbody {
-    margin-left: 20px;
-  }
-  
-  #card {
+#cards {
     width: 500px;
-    background-color: lightgrey;
-    border: 1px solid darkgray;
-    margin: 10px;
+    
   }
 
+  .card {
+    margin: 10px;
+
+  }
   .innercard {
-    padding: 10px;
+    border: 1px solid darkgray;
+    margin-bottom: 10px;
+    background-color: lightgrey;
+    padding-top: 10px;
+
   }
 
   .header {
@@ -40,4 +42,18 @@ sbody {
 
   .dark {
     background-color: #36393f;
+  }
+
+  .gridLayout {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .verticalLayout {
+    display: flex;
+    flex-direction: column;
+  }
+  .horizontalLayout {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
   }
